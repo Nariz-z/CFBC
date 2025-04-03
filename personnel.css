@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+
+
+/* Section Titles */
+.section-titles {
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* SBG OFFICERS & FACULTIES */
+.SBGofficers-frame,
+.faculties-frame, .Alumni-frame {
+    margin-left: 35px;
+    padding: 0px;
+    text-align: center;
+}
+
+.SBGofficers-image {
+    margin-right: 25px;
+    width: 600px; 
+    height: auto;
+    padding: 2px;
+    object-fit: cover; 
+}
+
+.SBGofficers-text {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+/* Faculty Row */
+.faculties-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+}
+
+.faculty {
+    text-align: center;
+    margin: 10px;
+}
+
+.faculty img {
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+    width: 150px; 
+    height: auto;
+    background-color: #0a2472;
+}
+
+.faculty-label {
+    text-align: center; 
+    margin-top: 5px;
+    font-family: 'Questrial', sans-serif;
+    color: whitesmoke; 
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.name {
+    font-weight: bold; 
+    font-size: 15px; 
+    margin: 0;
+    color: white;
+    font-family: questrial;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 12px; 
+    color: whitesmoke; 
+    margin: 0; 
+}
+
+.faculties-text {
+    color: black;
+}
+
+
+
+
+
+
+.Alumni-text, .SBGofficers-text, .faculties-text{
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: 'Candara', sans-serif;
+    text-align: flex;
+    color: white;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alumni {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; 
+    margin: 20px auto;
+    justify-items: center; 
+}
+
+
+.alumni img {
+    width: 600px; 
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.AY2024-2025-text {
+    color: white;
+    font-family: questrial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-image: url('logo1.png');
+    background-color: #0e0c32;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    margin: 0;
+    height: auto;
+    background-size: contain;
+    background-position: center center;
+    height: 100vh;
+}
+
+
+
+
+
+/*grids*/
+.container {
+    display: grid;
+    grid-template-areas: "header header" "content content" "footer footer";
+    grid-template-rows: auto auto auto;
+    gap: 0px;
+    position: relative;
+}
+
+.container > div {
+    box-sizing: border-box;
+}
+
+.container > div.header {
+    grid-area: header;
+    background-image: url('motto.png');
+    height: auto;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #c1e9fa;
+}
+
+.container > div.content {
+    grid-area: content;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.container > div.footer {
+    grid-area: footer;
+    background: white;
+    align-items: center;
+    height: auto;
+    color: black;
+    font-family: questrial;
+    margin: 0;
+}
+
+
+
+
+
+
+
+/*images*/
+.logo {
+    width: 50px;
+    float: left;
+    padding-left: 0px;
+}
+
+
+
+/*logo and schoolname*/
+.logo-school {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+
+
+/*typography*/
+h1 {
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-family: candara;
+    color: white;
+}
+
+.a {
+    background: #0a2472;
+    height: 60px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 30px;
+    align-items: center;
+    font-family: candara;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.2s;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.a a:hover {
+    background: white;
+    color: #0e0c32;
+    transform: scale(1.1);
+    height: 35px;
+}
+
+span {
+    display: flex;
+    gap: 60px;
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+.f {
+    background-color: #0a2472;
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+    height: 200px;
+}
+
+
+.fb {
+    cursor: pointer;
+    width: 50px;
+}
+
+.fb1 {
+    justify-content: left;
+}
+
+span a:hover {
+    background: white;
+    color: #0e0c32;
+    transform: scale(1.1);
+    height: 18px; 
+    transition: all 0.3s ease-in-out; 
+}
+
+/* For Faculty and Alumni Images */
+.faculty img:hover, .alumni img:hover {
+    transform: scale(1.1); 
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out; 
+}
+
+/* For Buttons */
+button:hover {
+    background-color: #0e0c32; 
+    color: white; 
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in-out;
+}
+
+/* For Section Titles */
+.section-titles:hover {
+    color: #0e0c32;
+    transform: scale(1.05); 
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+/* For Links and Buttons */
+span a:active, button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out; 
+}

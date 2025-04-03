@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cebu Foursquare Bible College</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+<div class="container">
+
+
+        <div class="header">
+            <div class="a">
+                <div class="logo-school">
+                    <img class="logo" src="logo.png" alt="LOGO">
+                    <h1>CEBU FOURSQUARE BIBLE COLLEGE</h1>
+                </div>
+                
+                <span>
+                    <a href="Home.html" class="a1">Home</a>
+                    <a href="About.html" class="a2">About</a>
+                    <a href="Personnel.html" class="a3">Personnel</a>
+                    <a href="Programs.html" class="a4">Programs</a>
+                </span>
+            </div>
+        </div>
+
+
+
+        <div class="content">
+            <p class="fonts">CFBC is a Bible college that offers subjects related to theology, with its own library, rooms, and an indescribable history since 1958. For decades, CFBC has produced many disciples who make disciples and has trained numerous licensed pastors who build their own churches and share the gospel worldwide.</p>
+            <br>
+            <p class="fonts">For decades, CFBC has produced many disciples who make disciples and has trained numerous licensed pastors who build their own churches and share the gospel worldwide.</p>
+            <p class="fonts">“Training disciples to make disciples,” was the foundation motto of CFBC</p>
+
+
+<br><br><br><br><br><br>
+
+            <hr>
+            <br><br><br><br>
+            <p class="fonts1"><b>FEATURES (CFBC FACILITIES)</b></p>
+            <br><br>
+
+
+
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slide"><img src="pic1.jpg" alt="1" class="circle-image"></div>
+                    <div class="slide"><img src="pic2.jpg" alt="2" class="circle-image"></div>
+                    <div class="slide"><img src="pic3.jpg" alt="3" class="circle-image"></div>
+                    <div class="slide"><img src="pic4.jpg" alt="4" class="circle-image"></div>
+                    <div class="slide"><img src="pic5.jpg" alt="5" class="circle-image"></div>
+                    <div class="slide"><img src="pic6.jpg" alt="6" class="circle-image"></div>
+                    <div class="slide"><img src="pic7.jpg" alt="7" class="circle-image"></div>
+                    <div class="slide"><img src="pic8.jpg" alt="8" class="circle-image"></div>
+                    <div class="slide"><img src="pic9.jpg" alt="9" class="circle-image"></div>
+                    <div class="slide"><img src="pic10.jpg" alt="10" ></div>
+                </div>
+            </div>
+            <div class="thumbnails">
+                <img src="pic1.jpg" onclick="changeSlide(0)">
+                <img src="pic2.jpg" onclick="changeSlide(1)">
+                <img src="pic3.jpg" onclick="changeSlide(2)">
+                <img src="pic4.jpg" onclick="changeSlide(3)">
+                <img src="pic5.jpg" onclick="changeSlide(4)">
+                <img src="pic6.jpg" onclick="changeSlide(5)">
+                <img src="pic7.jpg" onclick="changeSlide(6)">
+                <img src="pic8.jpg" onclick="changeSlide(7)">
+                <img src="pic9.jpg" onclick="changeSlide(8)">
+                <img src="pic10.jpg" onclick="changeSlide(9)">
+            </div>
+        </div>
+
+
+    
+
+
+
+
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelector('.slides');
+        const thumbnails = document.querySelectorAll('.thumbnails img');
+
+        function changeSlide(index) {
+            currentSlide = index;
+            const offset = -index * 800; // Adjust based on carousel width
+            slides.style.transform = `translateX(${offset}px)`;
+            
+            thumbnails.forEach(img => img.classList.remove('active'));
+            thumbnails[index].classList.add('active');
+        }
+
+        // Initialize first active thumbnail
+        thumbnails[0].classList.add('active');
+    </script>
+
+
+
+
+
+        <div class="footer">
+            <div class="f">
+                <p>115 Fr. Rahmann Street, Brgy. Zapatera, Cebu City, Philippines</p>
+                <p>Tel. No. (32) 255-1233</p>
+                <p>cebufoursqaurebiblecollege@gmail.com</p>
+
+                <a class="fb1" href="https://www.facebook.com/cebu.fbc">
+                    <img class="fb" src="fb.png" alt="Facebook Logo (FB link)">
+                </a>
+            </div>
+            
+        </div>
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+
+
+body {
+	background-image: url('logo1.png');
+	background-blend-mode: overlay;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: black;
+	margin: 0;
+	height: auto;
+	background-size: contain;
+    background-position: center center;
+    height: 100vh;
+}
+
+.pic {
+  width: 100%;              /* Make the image width responsive */
+  max-width: 1200px;        /* Limit the maximum width */
+  margin: 0 auto;           /* Center the image horizontally */
+  display: block;           /* Ensure the image is treated as a block element */
+  margin-top: -100px;       /* Keep your original vertical positioning */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+/*grids*/
+.container {
+	display: grid;
+	grid-template-areas: "header header" "content content" "footer footer";
+	grid-template-rows: auto auto auto;
+	gap: 0px;
+	position: relative;
+}
+
+.container > div {
+	box-sizing: border-box;
+}
+
+.container > div.header {
+	grid-area: header;
+	background-image: url('motto.png');
+	height: auto;
+	background-repeat: no-repeat;
+	position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #c1e9fa;
+}
+
+.container > div.content {
+	grid-area: content;
+	padding-left: 60px;
+	padding-right: 60px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.container > div.footer {
+	grid-area: footer;
+	background: white;
+	align-items: center;
+	height: auto;
+	color: black;
+	font-family: questrial;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*images*/
+.logo {
+	width: 50px;
+	float: left;
+	padding-left: 0px;
+}
+
+
+
+/*logo and schoolname*/
+.logo-school {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+
+
+
+/*typography*/
+h1 {
+	letter-spacing: 1px;
+	font-size: 25px;
+	font-family: candara;
+	color: white;
+}
+
+.a {
+	background: #0a2472;
+	height: 60px;
+	margin-top: 75px;
+	display: flex;
+	justify-content: space-between;	
+	padding: 0 30px;
+	align-items: center;
+	font-family: candara;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	transition: 0.2s;
+	letter-spacing: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.a a:hover {
+	background: white;
+	color: #0e0c32;
+	transform: scale(1.1);
+	height: 35px;
+}
+
+span {
+	display: flex;
+	gap: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*v&m*/
+.vm {
+	font-family: candara;
+	font-size: 75px;
+	text-align: center;
+}
+
+
+
+/*vision*/
+.v {
+	font-size: 40px;
+	font-family: candara;
+	letter-spacing: 2px;
+	padding-left: 25px;
+	padding-top: 0px;
+}
+
+.v-info {
+	font-family: questrial;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 0px;
+	padding-bottom: 40px;
+}
+
+
+/*mission*/
+.m {
+	font-size: 40px;
+	font-family: candara;
+	letter-spacing: 2px;
+	padding-left: 25px;
+	padding-top: 0px;
+}
+
+.m-info {
+	font-family: questrial;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 0px;
+}
+
+
+/*obj*/
+.o {
+	font-size: 40px;
+	font-family: candara;
+	letter-spacing: 2px;
+	padding-left: 25px;
+	padding-top: 0px;
+}
+
+.o-info {
+	font-family: questrial;
+	font-size: 17px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 0px;
+}
+
+
+/*co*/
+.co {
+	font-size: 40px;
+	font-family: candara;
+	letter-spacing: 2px;
+	padding-left: 25px;
+	padding-top: 0px;
+}
+
+
+
+
+
+/*r*/
+.r {
+	font-size: 40px;
+	font-family: candara;
+	letter-spacing: 2px;
+	padding-left: 25px;
+	padding-top: 0px;
+}
+
+.r-info {
+	font-family: questrial;
+	font-size: 17px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vm-con {
+	display: flex;
+}
+
+.v-con {
+	box-shadow: 3px 3px 5px 0 black;
+	transition: transform .2s;
+	border-radius: 10px;
+	padding: 30px;
+	margin-right: 50px;
+	background-color: white;
+	color: black;
+}
+
+.v-con:hover {
+	background-color: #0e0c32;
+	color: white;
+	box-shadow: 5px 5px 5px 0 black;
+	transform: scale(1.1);
+}
+
+.m-con {
+	box-shadow: 2px 5px 5px 0 black;
+	transition: transform .2s;
+	border-radius: 10px;
+	padding: 30px;
+	background-color: white;
+	color: black;
+}
+
+.m-con:hover {
+	background-color: #0e0c32;
+	color: white;
+	box-shadow: 5px 5px 5px 0 black;
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+.co-con {
+	display: flex;
+	align-items: center;
+}
+
+table {
+	border-collapse: collapse;
+	box-shadow: 2px 5px 5px 0 black;
+	border-radius: 10px;
+	background-color: lightgray;
+	padding: 20px;
+	color: black;
+}
+
+
+th, td {
+	font-family:questrial;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 25px;
+	border-bottom: 1px solid black;
+}
+
+tr:hover {
+	background-color: #0e0c32;
+	color: whitesmoke;
+}
+
+.cms {
+	border-bottom: none;
+	border-bottom-left-radius: 10px;
+}
+
+.cms-info {
+	border-bottom: none;
+	border-bottom-right-radius: 10px;
+}
+
+.bt {
+	border-top-left-radius: 10px;
+}
+
+.bt-info {
+	border-top-right-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.f {
+	background-color: #0e0c32;
+	color: white;
+	padding-left: 30px;
+	padding-top: 30px;
+	height: 200px;
+}
+
+
+.fb {
+	cursor: pointer;
+	width: 50px;
+}
+
+.fb1 {
+	justify-content: left;
+}
